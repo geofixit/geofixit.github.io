@@ -2,4 +2,4 @@
 My Personal Website
 My name is Edmar Blaya Tabamo, working as a developer specialist in a [telecom company.](https://stc.com.sa)
 
-![](C:\Users\Edmar\Desktop\Coding\GIS\gitrepo\images\1.png)
+![](https://cdn.you.com/stable-diffusion/579efc26-7eae-40e5-89a7-dc63edd3bc8d.png)         
