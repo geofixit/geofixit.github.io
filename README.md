@@ -3,7 +3,7 @@
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=geofixit.geofixit)
 [![LinkedIn Badge](https://img.shields.io/badge/My-LinkedIn-blue)](https://www.linkedin.com/in/edmartabamo/)
-=
+
 
 ## Education
 - [Tarlac State University](http://tsu.edu.ph/)
