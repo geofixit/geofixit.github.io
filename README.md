@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm currently working as an Esri full-stack developer and Enterprise administrator.<br>I'm looking to collaborate in the open-source community.<br>I'm looking for help with implementing the DevOps framework.<br>I'm currently learning Agile development and open-source tools ( Google Earth Engine, Etc. )
+I'm currently working as an Esri full-stack developer and Enterprise administrator.<br>I'm looking to collaborate in the open-source community.<br>I'm looking for help with implementing the DevOps framework.<br>I'm currently learning Agile development and open-source tools ( Google Earth Engine, etc.. )
 
 
 # 💻 Tech Stack:
