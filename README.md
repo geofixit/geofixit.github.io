@@ -1,5 +1,50 @@
 # 💫 About Me:
-I'm currently working as an Esri full-stack developer and Enterprise administrator.<br>I'm looking to collaborate in the open-source community.<br>I'm looking for help with implementing the DevOps framework.<br>I'm currently learning Agile development and open-source tools ( Google Earth Engine, etc.. )
+
+In the realm of code and data streams,
+I weave my path as a full-stack dreamer,
+A digital architect, a cosmic schemer,
+Where Esri's maps and layers interweave.
+
+Open-source whispers call my name,
+A community of minds, a shared refrain,
+Together we build, debug, and refine,
+In the vast expanse of the digital spine.
+
+DevOps dances in the moonlight glow,
+A choreography of pipelines that flow,
+I seek its rhythm, its harmonious beat,
+To orchestrate systems, make them complete.
+
+Agile winds carry me across the plains,
+User stories flutter like paper cranes,
+And in the fertile soil of learning's embrace,
+I plant the seeds of knowledge, trace by trace.
+
+Google Earth Engine, a celestial lens,
+Revealing Earth's secrets, its hidden trends,
+I explore pixels, satellites, and skies,
+Unraveling mysteries as the data flies.
+
+So here I stand, a wanderer of bytes,
+In this vast code-scape, where day turns to night,
+A full-stack stargazer, a seeker of grace,
+Guided by curiosity, in this boundless space.
+
+<style>
+  /* Custom CSS for the "About Me" section */
+  h1 {
+    color: #1f618d; /* Navy blue */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Dark gray */
+  }
+</style>
+
 
 
 # 💻 Tech Stack:
