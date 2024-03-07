@@ -1,6 +1,4 @@
-#Edmar Tabamo
-
-##💫 About Me:
+#💫 About Me:
 
 In the realm of code and data streams,
 I weave my path as a full-stack dreamer,
