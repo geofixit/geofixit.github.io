@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <title>Edmar Tabamo | GeoAI • GIS Architect • DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Edmar Tabamo is a GIS Architect and DevOps Platform Engineer specializing in ArcGIS Enterprise, GeoAI, and secure national-scale geospatial systems." />
+  <meta property="og:title" content="Edmar Tabamo | GeoAI • GIS Architect • DevOps Engineer" />
+  <meta property="og:description" content="Portfolio of Edmar Tabamo featuring enterprise GIS architecture, DevOps platform engineering, and secure GeoAI systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geofixit.net" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()" />
@@ -153,6 +158,28 @@
       font-size: 0.9rem;
     }
 
+    .nav-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      padding: 0 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      background: rgba(5, 12, 18, 0.9);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: border-color var(--transition), background var(--transition), transform var(--transition);
+    }
+
+    .nav-toggle:hover {
+      border-color: rgba(0, 229, 255, 0.65);
+      background: rgba(0, 229, 255, 0.1);
+      transform: translateY(-1px);
+    }
+
     .nav-links a {
       position: relative;
       padding-bottom: 3px;
@@ -180,8 +207,40 @@
     }
 
     @media (max-width: 768px) {
+      .nav {
+        position: relative;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+      }
+
       .nav-links {
         display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 12px;
+        right: 12px;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 14px;
+        border: 1px solid rgba(0, 229, 255, 0.28);
+        background: rgba(4, 8, 14, 0.96);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 11px 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .nav-links a:last-child {
+        border-bottom: 0;
       }
     }
 
@@ -845,7 +904,8 @@
         <div class="nav-logo-dot"></div>
         <span>EDMAR</span>
       </div>
-      <nav class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="nav-links" id="primary-navigation">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -856,6 +916,8 @@
       </nav>
     </div>
   </header>
+
+  <main>
 
   <!-- ====== HERO ====== -->
   <section id="hero">
@@ -879,8 +941,8 @@
           <span class="tag">Secure On‑Prem LLMs</span>
         </div>
         <div class="hero-ctas">
-          <a href="#projects"><button class="btn-primary">View My Work</button></a>
-          <a href="#geoai"><button class="btn-ghost">Explore GeoAI Lab</button></a>
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#geoai" class="btn-ghost">Explore GeoAI Lab</a>
         </div>
         <div class="hero-metrics">
           <div class="hero-metric">
@@ -925,7 +987,7 @@
     <div class="container about-grid reveal">
       <div>
         <div class="section-title">About</div>
-        <h2 class="section-heading">Enterprise GIS Administrator • Architect • DevOps Engineer • Platform Engineering </h2>
+        <h2 class="section-heading">Enterprise GIS Architect • DevOps Platform Engineer • GeoAI Practitioner</h2>
         <div class="about-text">
           <p>
             I’m a senior hybrid engineer with 15+ years of experience architecting and
@@ -1059,14 +1121,14 @@
           <h3 class="project-title">Nationwide Geospatial Intelligence Platform</h3>
           <div class="project-meta">Lead Geospatial DevOps Platform Engineer</div>
           <div class="project-stack">
-           HA ArcGIS Enterprise • HA ArcGIS Excalibur • ArcGIS Monitor • FME • HA Kubernetes (RKE2) • GitLab CI/CD On Prem • On‑Prem LLMs
+           HA ArcGIS Enterprise • HA ArcGIS Excalibur • ArcGIS Monitor • FME • HA Kubernetes (RKE2) • GitLab CI/CD (On-Prem) • On‑Prem LLMs
           </div>
           <ul class="project-list">
             <li>Managed and operated a secure, high‑availability national geospatial platform.</li>
             <li>Architected and deployed ArcGIS Excalibur to modernize imagery search, discovery, and exploitation workflows.</li>
             <li>Implemented ArcGIS Monitor for full‑stack observability, alerting, and SLA tracking.</li>
             <li>Managed 200+ Linux/Windows servers with automated patching and configuration.</li>
-            <li>Deployed air-gapped GitLab and Kubernetes HA in staging and production environments.</li>
+            <li>Deployed air‑gapped GitLab and Kubernetes HA in staging and production environments.</li>
             <li>Deployed offline AI LLMs in air‑gapped environments to support sensitive GeoAI R&D.</li>
             <li>Deployed and configured vectorized database - Kinetica for high-performance analytics</li>
           </ul>
@@ -1099,7 +1161,7 @@
           </div>
           <ul class="project-list">
             <li>Owned ArcGIS Enterprise as SME, leading operations, upgrades, and performance optimization.</li>
-            <li>Participated in the beta release of on-prem GeoAI "Ask Your Map" by STC.</li>
+            <li>Participated in the beta release of on‑prem GeoAI "Ask Your Map" by STC.</li>
             <li>Designed and implemented DevOps and CI/CD frameworks to automate analytic product delivery.</li>
             <li>Developed dashboards, web maps, and web apps used across multiple business units.</li>
             <li>Integrated ETL flows with the data warehouse for enterprise geodatabase synchronization.</li>
@@ -1261,10 +1323,12 @@
           <div><strong>Mobile:</strong> <a href="tel:+966552963739">+966 55 296 3739</a></div>
           <div><strong>Website:</strong> <a href="https://geofixit.net" target="_blank" rel="noopener noreferrer">geofixit.net</a></div>
         </div>
-        <a href="#hero"><button class="btn-primary">Back to Top</button></a>
+        <a href="#hero" class="btn-primary">Back to Top</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer>
     © <span id="year"></span> Edmar Blaya Tabamo • GeoAI • GIS • DevOps
@@ -1290,6 +1354,38 @@
     );
 
     revealEls.forEach((el) => observer.observe(el));
+
+    function setupMobileNavigation() {
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      if (!navToggle || !navLinks) return;
+
+      const closeMenu = () => {
+        navLinks.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      };
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("is-open");
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (window.innerWidth > 768) return;
+        if (navLinks.contains(event.target) || navToggle.contains(event.target)) return;
+        closeMenu();
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) closeMenu();
+      });
+    }
+
+    setupMobileNavigation();
 
     function getManualFastModeSetting() {
       try {
@@ -1508,10 +1604,10 @@
 
         const dragSensitivity = 0.16;
         userRotation += dx * dragSensitivity;
-        tiltDeg = clamp(tiltDeg - dy * 0.12, -70, 70);
+        tiltDeg = clamp(tiltDeg + dy * 0.12, -70, 70);
 
         velocityRotation = (dx * dragSensitivity * 1000) / dt;
-        velocityTilt = ((-dy * 0.12) * 1000) / dt;
+        velocityTilt = ((dy * 0.12) * 1000) / dt;
 
         lastPointerX = event.clientX;
         lastPointerY = event.clientY;
